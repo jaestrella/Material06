@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0088ff"
+    tools:context="com.iesvirgendelcarmen.dam.material06.Material06">
+
+   <android.support.design.widget.TabLayout
+       android:id="@+id/tabLayout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:elevation="6dp"
+       android:background="#cccccc"
+       android:minHeight="?attr/actionBarSize"
+       app:tabMode="fixed"
+       app:tabGravity="fill">
+
+   </android.support.design.widget.TabLayout>
+
+    <RelativeLayout
+        android:id="@+id/contenedor"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+    </RelativeLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+      <Button
+          android:id="@+id/añadirTabs"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Añadir Tabs"
+          />
+
+      <Button
+          android:id="@+id/quitarTabs"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Quitar Tabs"
+         />
+
+   </LinearLayout>
+
+</LinearLayout>
